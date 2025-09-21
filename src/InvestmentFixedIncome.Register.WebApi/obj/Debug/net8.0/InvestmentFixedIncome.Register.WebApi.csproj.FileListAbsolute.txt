@@ -1,0 +1,7 @@
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.csproj.AssemblyReference.cache
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.AssemblyInfoInputs.cache
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.AssemblyInfo.cs
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.WebApi\obj\Debug\net8.0\InvestmentFixedIncome.Register.WebApi.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "InvestmentFixedIncome.Register.Application": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

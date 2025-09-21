@@ -1,0 +1,5 @@
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.Application\obj\Debug\net8.0\InvestmentFixedIncome.Register.Application.csproj.AssemblyReference.cache
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.Application\obj\Debug\net8.0\InvestmentFixedIncome.Register.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.Application\obj\Debug\net8.0\InvestmentFixedIncome.Register.Application.AssemblyInfoInputs.cache
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.Application\obj\Debug\net8.0\InvestmentFixedIncome.Register.Application.AssemblyInfo.cs
+C:\Users\DAMARES\source\repos\InvestmentFixedIncome.Register\src\InvestmentFixedIncome.Register.Application\obj\Debug\net8.0\InvestmentFixedIncome.Register.Application.csproj.CoreCompileInputs.cache
