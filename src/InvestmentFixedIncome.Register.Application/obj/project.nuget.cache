@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "om/zyPShC8U=",
+  "dgSpecHash": "cWEbHQ4zakM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
+  "projectFilePath": "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DAMARES\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\DAMARES\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

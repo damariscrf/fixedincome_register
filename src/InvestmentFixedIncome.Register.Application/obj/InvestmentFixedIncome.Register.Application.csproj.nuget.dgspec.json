@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj": {}
+    "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj": {
+    "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
+        "projectUniqueName": "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
         "projectName": "InvestmentFixedIncome.Register.Application",
-        "projectPath": "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
+        "projectPath": "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\InvestmentFixedIncome.Register.Application.csproj",
         "packagesPath": "C:\\Users\\DAMARES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAMARES\\source\\repos\\InvestmentFixedIncome.Register\\src\\InvestmentFixedIncome.Register.Application\\obj\\",
+        "outputPath": "C:\\Users\\DAMARES\\source\\fixedincome_register\\src\\InvestmentFixedIncome.Register.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

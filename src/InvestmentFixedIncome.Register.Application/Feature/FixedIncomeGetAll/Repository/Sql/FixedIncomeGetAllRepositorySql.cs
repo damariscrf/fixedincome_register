@@ -1,6 +1,6 @@
-﻿namespace InvestmentFixedIncome.Register.Application.Feature.GetAllFixedIncome.Repository.Sql
+﻿namespace InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Repository.Sql
 {
-    public static class GetAllFixedIncomeRepositorySql
+    public static class FixedIncomeGetAllRepositorySql
     {
         internal const string _query = @"SELECT ""RENDA_FIXA_ID"" AS FixedIncomeId,
                                                LENGTH(""NAME"") AS BondAsset,

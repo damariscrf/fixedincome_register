@@ -1,6 +1,6 @@
-﻿namespace InvestmentFixedIncome.Register.Application.Feature.GetAllFixedIncome.Models
+﻿namespace InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Models
 {
-    public class GetAllFixedIncomeOuput
+    public class FixedIncomeGetAllOuput
     {
         public int FixedIncomeId { get; set; }
         public string BondAsset { get; set; }
