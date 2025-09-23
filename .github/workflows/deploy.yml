@@ -18,7 +18,7 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Install Node.js (required for Serverless Framework)
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -33,6 +33,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
+      - name: Setup Serverless license
+        if: ${{ secrets.SERVERLESS_ACCESS_KEY != '' }}
+        run: serverless config credentials --key ${{ secrets.SERVERLESS_ACCESS_KEY }}
+
       - name: Deploy API with Serverless
         working-directory: src/InvestmentFixedIncome.Register.WebApi
         run: serverless deploy --verbose
+        env:
+          ConnectionStrings__DefaultConnection: ${{ secrets.SECRET_DB }}
