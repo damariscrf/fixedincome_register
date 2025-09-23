@@ -34,8 +34,12 @@ jobs:
           aws-region: us-east-2
 
       - name: Setup Serverless license
-        if: ${{ secrets.SERVERLESS_ACCESS_KEY != '' }}
-        run: serverless config credentials --key ${{ secrets.SERVERLESS_ACCESS_KEY }}
+        env:
+          SERVERLESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+        run: |
+          if [ -n "$SERVERLESS_KEY" ]; then
+            serverless config credentials --key $SERVERLESS_KEY
+          fi
 
       - name: Deploy API with Serverless
         working-directory: src/InvestmentFixedIncome.Register.WebApi
