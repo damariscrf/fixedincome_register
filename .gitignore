@@ -87,3 +87,5 @@ StyleCopReport.xml
 *.cache
 *.pdb
 *.exe
+/src/InvestmentFixedIncome.Register.WebApi/node_modules
+/src/InvestmentFixedIncome.Register.WebApi/.serverless

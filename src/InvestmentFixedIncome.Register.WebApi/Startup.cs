@@ -59,7 +59,6 @@ namespace InvestmentFixedIncome.Register.WebApi
 
             app.UseRouting();
             app.UseDeveloperExceptionPage();
-            //app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

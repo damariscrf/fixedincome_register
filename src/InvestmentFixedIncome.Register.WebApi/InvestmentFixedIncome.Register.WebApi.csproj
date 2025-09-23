@@ -17,6 +17,9 @@
   </PropertyGroup>	
 
   <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.2.0" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3" />
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="4.0.3.2" />
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="MediatR" Version="11.0.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />

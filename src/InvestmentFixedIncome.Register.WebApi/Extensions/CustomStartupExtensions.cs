@@ -1,6 +1,7 @@
 ﻿using InvestmentFixedIncome.Register.Application.Shared.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace InvestmentFixedIncome.Register.WebApi.Extensions
 {
@@ -25,9 +26,9 @@ namespace InvestmentFixedIncome.Register.WebApi.Extensions
         public static IServiceCollection AddCustomConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddOptions();
-            services.Configure<TimeoutOptions>(configuration.GetSection("ConnectionStrings:TimeOut"));
+            services.Configure<TimeoutOptions>(configuration.GetSection("TimeOut"));
             services.Configure<ConnectionStringsOptions>(configuration.GetSection("ConnectionStrings"));
-            
+
             return services;
         }
     }

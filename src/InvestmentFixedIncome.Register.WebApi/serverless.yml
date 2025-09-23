@@ -1,0 +1,59 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: damariscrf
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: investment-fixedincome-register-webapi
+service: investment-fixedincome-register-webapi
+
+provider:
+  name: aws
+  runtime: dotnet8
+  region: us-east-2
+  environment:
+    ConnectionStrings__DefaultConnection: ${ssm:/secret_db}
+
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "ssm:GetParameter"
+        - "ssm:GetParameters"
+      Resource:
+        - "arn:aws:ssm:us-east-2:392361759151:parameter/secret_db"  
+
+functions:
+  RegisterGetAll:
+    handler: InvestmentFixedIncome.Register.WebApi::InvestmentFixedIncome.Register.WebApi.LambdaEntryPoint::FunctionHandlerAsync
+    events:
+      - httpApi:
+          path: /register
+          method: get
+
+  RegisterGetById:
+    handler: InvestmentFixedIncome.Register.WebApi::InvestmentFixedIncome.Register.WebApi.LambdaEntryPoint::FunctionHandlerAsync
+    events:
+      - httpApi:
+          path: /register/{fixedIncomeId}
+          method: get
+
+ 
+  RegisterTaxUpdate:
+    handler: InvestmentFixedIncome.Register.WebApi::InvestmentFixedIncome.Register.WebApi.LambdaEntryPoint::FunctionHandlerAsync
+    events:
+      - httpApi:
+          path: /register/tax/{fixedIncomeId}
+          method: patch
+
+  RegisterStockUpdate:
+    handler: InvestmentFixedIncome.Register.WebApi::InvestmentFixedIncome.Register.WebApi.LambdaEntryPoint::FunctionHandlerAsync
+    events:
+      - httpApi:
+          path: /register/stock/{fixedIncomeId}
+          method: patch
+
+plugins:
+  - serverless-dotnet
+
+package:
+  exclude:
+    - "**/*.Tests.csproj"
+    - "**/obj/**"
+    - "**/bin/**"
