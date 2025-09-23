@@ -1,4 +1,5 @@
 ﻿using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Models;
+using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetById.Models;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeStockUpdate.Models;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeTaxUpdate.Models;
 using MediatR;
@@ -11,7 +12,7 @@ namespace InvestmentFixedIncome.Register.WebApi.Controllers
 {
     [ApiController]
     [Produces("application/json")]
-    [Route("investmentfixedincome")]
+    [Route("register")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -31,6 +32,16 @@ namespace InvestmentFixedIncome.Register.WebApi.Controllers
         {
             return Ok(await _mediator.Send(new FixedIncomeGetAllInput(), cancellationToken));
         }
+
+        [HttpGet("{fixedIncomeId}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        public async Task<IActionResult> FixedIncomeGetByIdAsync(
+            [FromRoute] int fixedIncomeId,
+            CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(new FixedIncomeGetByIdInput(fixedIncomeId), cancellationToken));
+        }
+
 
         [HttpPatch]
         [Route("tax/{fixedIncomeId}")]

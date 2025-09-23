@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Interface;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Repository;
+using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetById.Interface;
+using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetById.Repository;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeStockUpdate.Interface;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeStockUpdate.Repository;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeTaxUpdate.Interface;
@@ -25,6 +27,14 @@ namespace InvestmentFixedIncome.Register.Application.Shared.AutofacModules
 
                 return new FixedIncomeGetAllRepository(connectionPostgree,options);
             }).As<IFixedIncomeGetAllRepository>();
+
+            builder.Register(container =>
+            {
+                var connectionPostgree = container.Resolve<IDbConnectionPostgree>();
+                var options = container.Resolve<IOptions<TimeoutOptions>>();
+
+                return new FixedIncomeGetByIdRepository(connectionPostgree, options);
+            }).As<IFixedIncomeGetByIdRepository>();
 
             builder.Register(container =>
             {

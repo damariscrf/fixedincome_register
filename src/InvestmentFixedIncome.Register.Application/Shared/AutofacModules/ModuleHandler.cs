@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.Models;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetAll.UseCase;
+using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetById.Models;
+using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeGetById.UseCase;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeStockUpdate.Models;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeStockUpdate.UseCase;
 using InvestmentFixedIncome.Register.Application.Feature.FixedIncomeTaxUpdate.Models;
@@ -20,6 +22,9 @@ namespace InvestmentFixedIncome.Register.Application.Shared.AutofacModules
 
             builder.RegisterAssemblyTypes(typeof(FixedIncomeGetAllInput).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));
             builder.RegisterAssemblyTypes(typeof(FixedIncomeGetAllUseCase).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));
+
+            builder.RegisterAssemblyTypes(typeof(FixedIncomeGetByIdInput).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));
+            builder.RegisterAssemblyTypes(typeof(FixedIncomeGetByIdUseCase).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));
 
             builder.RegisterAssemblyTypes(typeof(FixedIncomeTaxUpdateInput).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));
             builder.RegisterAssemblyTypes(typeof(FixedIncomeTaxUpdateUseCase).GetTypeInfo().Assembly).AsClosedTypesOf(typeof(IRequestHandler<,>));

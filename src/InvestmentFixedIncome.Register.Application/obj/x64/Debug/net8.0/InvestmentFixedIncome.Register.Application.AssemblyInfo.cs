@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InvestmentFixedIncome.Register.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19698290ab008b74fa953296c66868ed78474533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66c2e18d876a9d0198df5d71875bb9717ba0bbe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("InvestmentFixedIncome.Register.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InvestmentFixedIncome.Register.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

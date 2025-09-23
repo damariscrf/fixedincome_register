@@ -45,6 +45,52 @@
         }
       }
     },
+    "/investmentfixedincome/{fixedIncomeId}": {
+      "get": {
+        "tags": [
+          "Register"
+        ],
+        "parameters": [
+          {
+            "name": "fixedIncomeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
     "/investmentfixedincome/tax/{fixedIncomeId}": {
       "patch": {
         "tags": [
