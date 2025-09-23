@@ -36,10 +36,7 @@ jobs:
       - name: Setup Serverless license
         env:
           SERVERLESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
-        run: |
-          if [ -n "$SERVERLESS_KEY" ]; then
-            serverless config credentials --key $SERVERLESS_KEY
-          fi
+        run: serverless login --key $SERVERLESS_ACCESS_KEY
 
       - name: Deploy API with Serverless
         working-directory: src/InvestmentFixedIncome.Register.WebApi
